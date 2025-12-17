@@ -1,0 +1,190 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0D0D0D;
+  padding: 20px;
+  margin: -40px;
+}
+
+.login-card {
+  background-color: #1A1A1A;
+  border-radius: 12px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #333;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.login-card h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  background-color: #1E1E1E;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #8A2BE2;
+  box-shadow: 0 0 0 2px rgba(138, 43, 226, 0.2);
+}
+
+.form-group input::placeholder {
+  color: #666;
+}
+
+.form-group input#email::placeholder {
+  color: #666;
+}
+
+.form-group input#name::placeholder {
+  color: #666;
+}
+
+.form-group input#surname::placeholder {
+  color: #666;
+}
+
+.form-group input#password::placeholder {
+  color: #666;
+}
+
+.form-group input#confirmPassword::placeholder {
+  color: #666;
+}
+
+.form-group input.error {
+  border-color: #ff4757;
+}
+
+.field-error {
+  color: #ff4757;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  display: block;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #8A2BE2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 0.5rem;
+}
+
+.login-btn:hover:not(:disabled) {
+  background-color: #7a1bd2;
+}
+
+.login-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background-color: rgba(255, 71, 87, 0.1);
+  color: #ff4757;
+  padding: 0.9rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border: 1px solid rgba(255, 71, 87, 0.3);
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #333;
+}
+
+.form-footer p {
+  color: #aaa;
+  margin: 0;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #8A2BE2;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  padding: 0;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.toggle-btn:hover {
+  color: #9d4edd;
+}
+
+.admin-note {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #333;
+}
+
+.security-note {
+  color: #888 !important;
+  font-style: italic;
+  font-size: 0.85rem;
+  margin-top: 0.5rem !important;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .login-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
