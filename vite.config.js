@@ -7,5 +7,6 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true
-  }
-})
+  },
+  base: process.env.VITE_BASE_PATH || "/movie-platform-project",
+});
